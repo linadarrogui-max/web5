@@ -5,48 +5,51 @@
     box-sizing: border-box;
 }
 
-/* Corps de la page */
+/* Body */
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(to right, #141e30, #243b55);
-    color: white;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(to right, #ffdde1, #ee9ca7);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 25px;
     padding: 40px;
+    color: #5c3b4d;
 }
 
 /* Titre */
 h1{
     font-size: 3rem;
-    color: #00d4ff;
-    margin-bottom: 10px;
+    color: #ff4f81;
+    text-shadow: 2px 2px 8px rgba(255,255,255,0.7);
     text-align: center;
 }
 
-/* Paragraphe */
+/* Texte */
 p{
     font-size: 1.2rem;
-    color: #dcdcdc;
-    text-align: center;
+    background-color: rgba(255,255,255,0.5);
+    padding: 10px 20px;
+    border-radius: 15px;
 }
 
-/* Bouton GitHub */
+/* Bouton */
 a{
     text-decoration: none;
-    background-color: #00d4ff;
-    color: #141e30;
-    padding: 12px 25px;
-    border-radius: 10px;
+    background-color: #ff4f81;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 30px;
     font-weight: bold;
-    transition: 0.3s;
+    box-shadow: 0 4px 12px rgba(255,79,129,0.4);
+    transition: 0.3s ease;
 }
 
 a:hover{
     background-color: white;
-    transform: scale(1.05);
+    color: #ff4f81;
+    transform: translateY(-3px);
 }
 
 /* Sections */
@@ -54,28 +57,38 @@ header,
 main,
 footer{
     width: 80%;
-    max-width: 700px;
+    max-width: 750px;
     padding: 25px;
-    border-radius: 15px;
+    border-radius: 25px;
     text-align: center;
-    font-size: 1.1rem;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    backdrop-filter: blur(10px);
+    background: rgba(255,255,255,0.35);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    border: 2px solid rgba(255,255,255,0.4);
 }
 
 /* Header */
 header{
-    background-color: rgba(0, 212, 255, 0.2);
-    border: 2px solid #00d4ff;
+    color: #ff4f81;
+    font-size: 1.2rem;
 }
 
 /* Main */
 main{
-    background-color: rgba(255,255,255,0.1);
-    border: 2px solid white;
+    color: #7a4e68;
+    font-size: 1.1rem;
 }
 
 /* Footer */
 footer{
-    background-color: rgba(0,0,0,0.3);
-    border: 2px solid #00d4ff;
+    color: #a14d6f;
+    font-size: 1rem;
+}
+
+/* Animation douce */
+header:hover,
+main:hover,
+footer:hover{
+    transform: scale(1.02);
+    transition: 0.3s;
 }
