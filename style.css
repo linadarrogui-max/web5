@@ -92,3 +92,9 @@ footer:hover{
     transform: scale(1.02);
     transition: 0.3s;
 }
+nav a{
+    margin: 0 10px;
+text-decoration: none;
+    color: #ff4f81;
+   
+}
