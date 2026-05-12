@@ -95,3 +95,4 @@ a{
 a:hover{
     transform: scale(1.05);
 }
+*{scroll-behavior: smooth;}
